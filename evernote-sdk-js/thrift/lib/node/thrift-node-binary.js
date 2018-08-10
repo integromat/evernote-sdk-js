@@ -99,7 +99,7 @@ exports.NodeBinaryHttpTransport = function(url) {
     }
     var port = purl.port;
     if (!port) {
-      port = purl.protocol === 'https' ? 443 : 80;
+      port = purl.protocol === 'https:' ? 443 : 80;
     }
     var options = {
       hostname: purl.hostname,
@@ -108,7 +108,7 @@ exports.NodeBinaryHttpTransport = function(url) {
       method: 'POST',
       headers: self.headers
     };
-    var doRequest = (purl.protocol === 'https' ? https : http).request;
+    var doRequest = (purl.protocol === 'https:' ? https : http).request;
 
     var req = doRequest(options, function(res) {
       var data = [], dataLength = 0;
