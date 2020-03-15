@@ -1,10 +1,10 @@
 {
   "author": "Evernote",
-  "name": "evernote",
+  "name": "@integromat/evernote",
   "description": "Evernote SDK for Node.js",
-  "version": "1.25.82",
+  "version": "1.25.83",
   "repository": {
-    "url": "https://github.com/evernote/evernote-sdk-js"
+    "url": "https://github.com/integromat/evernote-sdk-js.git"
   },
   "main": "index",
   "directories": {
